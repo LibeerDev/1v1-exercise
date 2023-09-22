@@ -47,6 +47,7 @@ img {
 
 .stats {
     padding: 40px;
+    min-width: 20vh;
     color: white;
     background-color: rgba(88, 88, 88, 0.4);
     width: 20vw;
