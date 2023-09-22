@@ -5,8 +5,17 @@
     font-family: Roboto, sans-serif;
 }
 
+img:focus {
+    outline: none;   
+}
+
+img {
+    pointer-events: none;
+}
+
 * {
     box-sizing: border-box;
+    user-select: none;
 }
 
 .background img {
