@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coustard&family=Open+Sans&family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap');
+
+:root {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.background img {
+    position: fixed;
+    z-index: -9999; 
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+}
+
+.face {
+    min-width: 300px;
+    max-height: 300px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.player1 {
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+.player2  {
+    margin-right: 5vw;
+    margin-top: 5vh;
+}
+
+.stats {
+    padding: 40px;
+    color: white;
+    background-color: rgba(88, 88, 88, 0.4);
+    width: 20vw;
+    border-radius: 50px;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.burning-text {
+    max-height: 100px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.versus {
+    width: 10vw;
+    top: 35%;
+    position: absolute;
+}
+
+.stats {
+    margin: 20px;
+}
+
+@keyframes moveBackAndForth {
+    0%, 100% {
+      transform: translateX(40px); /* Start and end position, no translation */
+    }
+    50% {
+      transform: translateX(90px); /* Middle position, move 20px to the right */
+    }
+  }
+  
+  /* Apply the animation to both player faces */
+  .player1 .face {
+    animation: moveBackAndForth 3s infinite ease-in-out, smileChangeMarcel 3s infinite;
+  }
+
+    /* Apply the animation to both player faces */
+    .player2 .face {
+        animation: moveBackAndForth 3s infinite ease-in-out, smileChangeLibeer 3s infinite;
+      }
+
+@keyframes smileChangeMarcel {
+    0% {
+        content: url(imgs/marcel.jpg);
+    }
+
+    100% {
+        content: url(imgs/marcel_laugh.jpg);
+    }
+}
+
+@keyframes smileChangeLibeer {
+    0% {
+        content: url(imgs/libeer_laugh.jpg);
+    }
+
+    100% {
+        content: url(imgs/libeer.jpg);
+    }
+}
+
