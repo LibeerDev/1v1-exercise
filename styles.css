@@ -90,12 +90,12 @@ img {
   
   /* Apply the animation to both player faces */
   .player1 .face {
-    animation: moveBackAndForth 3s infinite ease-in-out, smileChangeMarcel 3s infinite;
+    animation: moveBackAndForth 3s infinite ease-in-out, smileChangeMarcel 1.5s infinite;
   }
 
     /* Apply the animation to both player faces */
     .player2 .face {
-        animation: moveBackAndForth 3s infinite ease-in-out, smileChangeLibeer 3s infinite;
+        animation: moveBackAndForth 2s infinite ease-in-out, smileChangeLibeer 1.5s infinite;
       }
 
 @keyframes smileChangeMarcel {
