@@ -3,6 +3,7 @@
 :root {
     font-size: 24px;
     font-family: Roboto, sans-serif;
+    overflow: hidden;
 }
 
 img:focus {
@@ -33,16 +34,6 @@ img {
     max-height: 300px;
     width: 200px;
     border-radius: 50%;
-}
-
-.player1 {
-    margin-left: 5vw;
-    margin-top: 5vh;
-}
-
-.player2  {
-    margin-right: 5vw;
-    margin-top: 5vh;
 }
 
 .stats {
@@ -81,10 +72,10 @@ img {
 
 @keyframes moveBackAndForth {
     0%, 100% {
-      transform: translateX(40px); /* Start and end position, no translation */
+      transform: translateX(0px); /* Start and end position, no translation */
     }
     50% {
-      transform: translateX(90px); /* Middle position, move 20px to the right */
+      transform: translateX(50px); /* Middle position, move 20px to the right */
     }
   }
   
@@ -118,3 +109,20 @@ img {
     }
 }
 
+
+/* Mobile Devices (up to 767px) */
+@media screen and (max-width: 767px) {
+    .players {
+        width: 50vw;
+    }
+  }
+  
+  /* Tablets (768px to 991px) */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Your tablet styles here */
+  }
+  
+  /* Desktops and Laptops (992px and above) */
+  @media screen and (min-width: 992px) {
+    /* Your desktop styles here */
+  }
